@@ -1,0 +1,11 @@
+{
+  "name": "exemplo_javascript1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+        "start": "node ./src/main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
