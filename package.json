@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-        "start": "node ./src/main.js"
+    "start": "node ./src/main.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }

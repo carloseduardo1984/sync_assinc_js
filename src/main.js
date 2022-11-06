@@ -1,15 +1,21 @@
-const leiaEntrada = require("readline");
+async function minhaFuncaoAssincrona() {
 
-const lendo = leiaEntrada.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+  let promessa = new Promise((resolve, reject) => { 
+    
+    console.log("Aguardando...");
+    setTimeout(() => resolve("Feito!"), 5000)
+    
+  });
 
-lendo.question("Qual seu nome? ", function (answer) {
-  console.log(`Oh, seu nome é ${answer}`);
-});
+  let resultado = await promessa; // wait until the promise resolves (*)
 
-// const produto = { id : 1, nome : 'Grampo', preco : 34.7 } 
-// const produtoFreeze = Object.freeze(produto) 
-// produtoFreeze.preco = null 
-// console.log(produtoFreeze.preco) // 34.7 
+  console.log(resultado); // "done!"
+}
+
+minhaFuncaoAssincrona ();
+
+console.log("----------------------");
+
+setTimeout(function() { console.log('Aqui uma mensagem assincrona!'); }, 2000);
+
+console.log('Aqui uma mensagem sincrona!');

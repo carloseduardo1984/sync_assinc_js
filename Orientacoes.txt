@@ -1,0 +1,4 @@
+Orientações:
+
+1 -Execute o npm install 
+2 -Execute o npm start
