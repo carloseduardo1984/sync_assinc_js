@@ -2,7 +2,7 @@ async function minhaFuncaoAssincrona() {
 
   let promessa = new Promise((resolve, reject) => { 
     
-    console.log("Aguardando...");
+    console.log("Aguardando...x");
     setTimeout(() => resolve("Feito!"), 5000)
     
   });
